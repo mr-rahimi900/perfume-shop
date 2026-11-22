@@ -1,0 +1,137 @@
+:root {
+  /* =========================
+     Typography
+  ========================= */
+
+  --fs-xs: clamp(1.2rem, 1.12rem + 0.1vw, 1.3rem);
+  --fs-sm: clamp(1.3rem, 1.2rem + 0.15vw, 1.5rem);
+  --fs-base: clamp(1.5rem, 1.35rem + 0.2vw, 1.7rem);
+  --fs-md: clamp(1.6rem, 1.45rem + 0.25vw, 1.8rem);
+  --fs-lg: clamp(1.8rem, 1.6rem + 0.3vw, 2rem);
+  --fs-xl: clamp(2rem, 1.75rem + 0.4vw, 2.4rem);
+  --fs-2xl: clamp(2.4rem, 2rem + 0.6vw, 2.8rem);
+
+  /* =========================
+     Icon Sizes
+  ========================= */
+
+  --icon-xs: 1.6rem;
+  --icon-sm: 2rem;
+  --icon-md: 2.4rem;
+  --icon-lg: 2.8rem;
+  --icon-xl: 3.2rem;
+
+  /* =========================
+     Spacing
+  ========================= */
+
+  --space-1: 0.4rem;
+  --space-2: 0.5rem;
+  --space-3: 0.8rem;
+  --space-4: 1rem;
+  --space-5: 1.2rem;
+  --space-6: 1.4rem;
+  --space-7: 1.6rem;
+  --space-8: 1.8rem;
+  --space-9: 2rem;
+  --space-10: 2.2rem;
+  --space-11: 2.4rem;
+  --space-12: 2.6rem;
+  --space-13: 2.8rem;
+  --space-14: 3rem;
+  --space-15: 3.2rem;
+  --space-16: 3.4rem;
+  --space-17: 3.6rem;
+  --space-18: 3.8rem;
+  --space-19: 4rem;
+
+  /* =========================
+     Border Radius
+  ========================= */
+
+  --radius-2xs: 0.5rem;
+  --radius-xs: 0.8rem;
+  --radius-sm: 1rem;
+  --radius-base:1.2rem;
+  --radius-md: 1.6rem;
+  --radius-lg: 2rem;
+  --radius-xl: 2.8rem;
+  --radius-2xl: 3.4rem;
+  --radius-full: 999px;
+
+  /* =================================
+     COLORS
+  ================================= */
+
+  --color-primary: #cc312d;
+  --color-secondary: #2b2d42;
+  --color-cardIcon:#EBB811;
+  --color-badge:#e5303f;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-gray-50: #f0f0f0;
+  --color-gray-100: #ebebeb;
+
+  --color-gray-200: #e6e6e6;
+
+  --color-gray-300: #f7f7f7;
+  --color-gray-400: #e0e0e0;
+
+  --color-gray-600: #757575;
+  --color-gray-700: #606060;
+  --color-gray-800: #424242;
+  --color-gray-900: #130505;
+
+  /* =================================
+     3. TEXT COLORS
+  ================================= */
+
+  --color-text-main:#1A1814;
+  --color-text-primary: #2f0d0c;
+  --color-text-secondary: #555555;
+  --color-text-muted: #8f8989;
+
+  /* =================================
+     4. BACKGROUND COLORS
+  ================================= */
+
+  --color-bg-body: var(--color-white);
+  --color-bg-card: var(--color-gray-300);
+  --color-bg-primary: var(--color-primary);
+  --color-bg-active: var(--color-secondary);
+
+  /* =================================
+     5. BORDER COLORS
+  ================================= */
+
+  --color-border-light: var(--color-gray-50);
+  --color-border-dark: var(--color-gray-200);
+  --color-border-card: var(--color-gray-100);
+  --color-border-active: var(--color-primary);
+
+  /* =================================
+     6. STATUS COLORS
+  ================================= */
+
+  /* Processing - در حال پردازش */
+
+  --color-info: #2e7af1;
+  --color-info-bg: #edf4ff;
+
+  /* Success - تحویل شده */
+
+  --color-success: #0caf3a;
+  --color-success-bg: #e9f7ed;
+
+  /* Danger - لغو شده */
+
+  --color-danger: #ed4545;
+  --color-danger-bg: #fdebec;
+
+  /* Warning - مرجوعی */
+
+  --color-warning: #14151b;
+  --color-warning-bg: #e8e8e8;
+}

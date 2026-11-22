@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>فروشگاه عطر | تکمیل سفارش</title>
+
+    <meta name="description" content="فروشگاه عطر | صفحه پرداخت " />
+
+    <meta property="og:description" content="فروشگاه عطر | صفحه پرداخت " />
+    <meta property="og:title" content="فروشگاه عطر | صفحه پرداخت " />
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main class="checkout container">
+      <section class="checkout__content">
+        <header class="section-heading">
+          <h2 class="section-heading__title">
+            اطلاعات کاربری
+            <span class="text--light">شما</span>
+          </h2>
+        </header>
+        <form class="checkout-form">
+          <!-- User Information -->
+          <section class="checkout-form__section">
+            <h3 class="section-title">اطلاعات تحویل گیرنده</h3>
+
+            <div class="checkout-form__grid">
+              <div class="form-field">
+                <label class="form-field__label" for="fullname">
+                  نام و نام خانوادگی
+                </label>
+
+                <input
+                  class="form-field__input"
+                  type="text"
+                  id="fullname"
+                  placeholder="نام و نام خانوادگی"
+                  value="حمید رضا آقارحیمی"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="phone">
+                  شماره تماس گیرنده
+                </label>
+
+                <input
+                  class="form-field__input"
+                  type="tel"
+                  id="phone"
+                  placeholder="09121111111"
+                  value="09121234567"
+                  required
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- Address -->
+          <section class="checkout-form__section">
+            <div class="address-section__header">
+              <h3 class="section-title">آدرس تحویل</h3>
+
+              <button type="button" class="address-section__add">
+                <svg class="icon">
+                  <use href="/assets/images/svg-sprite.svg#Plus"></use>
+                </svg>
+                انتخاب آدرس
+              </button>
+            </div>
+
+            <div class="checkout-form__grid">
+              <div class="form-field">
+                <label class="form-field__label" for="province"> استان </label>
+                <div class="form-field__select-wrapper">
+                  <svg class="icon">
+                    <use href="/assets/images/svg-sprite.svg#Down"></use>
+                  </svg>
+                  <select class="form-field__select" id="province" required>
+                    <option value="">انتخاب استان</option>
+                    <option>تهران</option>
+                    <option>اصفهان</option>
+                    <option>فارس</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="city"> شهر </label>
+                <div class="form-field__select-wrapper">
+                  <svg class="icon">
+                    <use href="/assets/images/svg-sprite.svg#Down"></use>
+                  </svg>
+                  <select class="form-field__select" id="city" required>
+                    <option value="">انتخاب شهر</option>
+                    <option>تهران</option>
+                    <option>کرج</option>
+                    <option>شیراز</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="postal"> پلاک </label>
+
+                <input
+                  class="form-field__input"
+                  id="postal"
+                  type="text"
+                  placeholder="1"
+                  value="1"
+                />
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="postcode">
+                  کد پستی
+                </label>
+
+                <input
+                  class="form-field__input"
+                  id="postcode"
+                  type="text"
+                  placeholder="کد پستی"
+                  value="987654321"
+                />
+              </div>
+
+              <div class="form-field form-field--full">
+                <label class="form-field__label" for="address">
+                  نشانی پستی
+                </label>
+
+                <textarea
+                  class="form-field__textarea"
+                  id="address"
+                  placeholder="آدرس دقیق خود را وارد کنید..."
+                  required
+                >
+تهران ، میدان آزادی ، خیابان انقلاب ، کوچه نهم ، پلاک 1 ، طبقه دوم
+              </textarea
+                >
+              </div>
+            </div>
+          </section>
+
+          <!-- Delivery -->
+          <section class="checkout-form__section">
+            <div class="delivery__header">
+              <h2 class="section-title">
+                <span class="text--light">انتخاب</span> نحوه ارسال
+              </h2>
+              <span class="delivery__count"> 3 محصول در سبد خرید </span>
+            </div>
+
+            <div class="delivery__options">
+              <label class="delivery-option">
+                <span class="delivery-option__label">
+                  <input
+                    class="delivery-option__radio"
+                    type="radio"
+                    name="delivery"
+                    value="express"
+                    checked
+                  />
+                  <svg class="icon">
+                    <use href="/assets/images/svg-sprite.svg#Check"></use>
+                  </svg>
+                  تیپاکس با بیمه (1 تا 3 روز کاری)
+                </span>
+
+                <p class="delivery-option__price">
+                  <span class="delivery-option__amount">45,000</span>
+                  <span class="delivery-option__currency">تومان</span>
+                </p>
+              </label>
+
+              <label class="delivery-option">
+                <span class="delivery-option__label">
+                  <input
+                    class="delivery-option__radio"
+                    type="radio"
+                    name="delivery"
+                    value="post"
+                  />
+                  <svg class="icon">
+                    <use href="/assets/images/svg-sprite.svg#Check"></use>
+                  </svg>
+                  پست پیشتاز (2 تا 5 روز کاری)
+                </span>
+
+                <p class="delivery-option__price">
+                  <span class="delivery-option__amount">80,000</span>
+                  <span class="delivery-option__currency">تومان</span>
+                </p>
+              </label>
+            </div>
+          </section>
+        </form>
+      </section>
+      <aside class="checkout__sidebar cart">
+        <h2 class="cart__header">
+          اطلاعات <span class="text--light">خرید</span>
+        </h2>
+        <div class="cart__products">
+          <article class="cart-item">
+            <div class="cart-item__image">
+              <img
+                src="/assets/images/products/product-1.png"
+                alt="نام محصول شماره 1"
+              />
+            </div>
+
+            <div class="cart-item__info">
+              <div class="cart-item__top">
+                <h3 class="cart-item__name">
+                  <span class="cart-item__name-en">Hugo Just Different</span>
+                  <span class="cart-item__name-fa">هولوگرام جاست دیفرنت</span>
+                </h3>
+                <p class="cart-item__volume">100&nbsp;<span>میل</span></p>
+              </div>
+
+              <div class="cart-item__bottom">
+                <p class="cart-item__price">
+                  <span class="cart-item__amount">1,550,000</span>
+                  <span class="cart-item__currency">تومان</span>
+                </p>
+
+                <div class="cart-item__quantity">
+                  <button
+                    type="button"
+                    class="cart-item__button"
+                    aria-label="افزایش تعداد"
+                  >
+                    <svg class="icon">
+                      <use href="/assets/images/svg-sprite.svg#Plus"></use>
+                    </svg>
+                  </button>
+
+                  <input
+                    type="number"
+                    value="1"
+                    class="cart-item__quantity-input"
+                  />
+
+                  <button
+                    type="button"
+                    class="cart-item__button cart-item__button--remove"
+                    aria-label="حذف محصول"
+                  >
+                    <svg class="icon">
+                      <use href="/assets/images/svg-sprite.svg#trash"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="cart-item">
+            <div class="cart-item__image">
+              <img
+                src="/assets/images/products/product-2.png"
+                alt="نام محصول شماره 2"
+              />
+            </div>
+
+            <div class="cart-item__info">
+              <div class="cart-item__top">
+                <h3 class="cart-item__name">
+                  <span class="cart-item__name-en">Hugo Just Different</span>
+                  <span class="cart-item__name-fa">هولوگرام جاست دیفرنت</span>
+                </h3>
+                <p class="cart-item__volume">100&nbsp;<span>میل</span></p>
+              </div>
+
+              <div class="cart-item__bottom">
+                <p class="cart-item__price">
+                  <span class="cart-item__amount">1,550,000</span>
+                  <span class="cart-item__currency">تومان</span>
+                </p>
+
+                <div class="cart-item__quantity">
+                  <button
+                    type="button"
+                    class="cart-item__button"
+                    aria-label="افزایش تعداد"
+                  >
+                    <svg class="icon">
+                      <use href="/assets/images/svg-sprite.svg#Plus"></use>
+                    </svg>
+                  </button>
+
+                  <input
+                    type="number"
+                    value="1"
+                    class="cart-item__quantity-input"
+                  />
+
+                  <button
+                    type="button"
+                    class="cart-item__button cart-item__button--remove"
+                    aria-label="حذف محصول"
+                  >
+                    <svg class="icon">
+                      <use href="/assets/images/svg-sprite.svg#trash"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="cart-item">
+            <div class="cart-item__image">
+              <img
+                src="/assets/images/products/product-3.png"
+                alt="نام محصول شماره 3"
+              />
+            </div>
+
+            <div class="cart-item__info">
+              <div class="cart-item__top">
+                <h3 class="cart-item__name">
+                  <span class="cart-item__name-en">Hugo Just Different</span>
+                  <span class="cart-item__name-fa">هولوگرام جاست دیفرنت</span>
+                </h3>
+                <p class="cart-item__volume">100&nbsp;<span>میل</span></p>
+              </div>
+
+              <div class="cart-item__bottom">
+                <p class="cart-item__price">
+                  <span class="cart-item__amount">1,550,000</span>
+                  <span class="cart-item__currency">تومان</span>
+                </p>
+
+                <div class="cart-item__quantity">
+                  <button type="button" class="cart-item__button">
+                    <svg class="icon">
+                      <use href="/assets/images/svg-sprite.svg#Plus"></use>
+                    </svg>
+                  </button>
+
+                  <input
+                    type="number"
+                    value="1"
+                    class="cart-item__quantity-input"
+                  />
+
+                  <button
+                    type="button"
+                    class="cart-item__button cart-item__button--remove"
+                  >
+                    <svg class="icon">
+                      <use href="/assets/images/svg-sprite.svg#trash"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <section class="cart-summary">
+          <div class="cart-summary__row">
+            <span class="cart-summary__label">خرید شما</span>
+
+            <p class="cart-summary__price">
+              <span class="cart-summary__amount">4,650,000</span>
+              <span class="cart-summary__currency">تومان</span>
+            </p>
+          </div>
+
+          <div class="cart-summary__row">
+            <span class="cart-summary__label">هزینه ارسال</span>
+
+            <p class="cart-summary__price">
+              <span class="cart-summary__amount">0</span>
+              <span class="cart-summary__currency">تومان</span>
+            </p>
+          </div>
+
+          <div class="cart-summary__row cart-summary__row--total">
+            <span class="cart-summary__label">مبلغ قابل پرداخت</span>
+
+            <p class="cart-summary__price">
+              <span class="cart-summary__amount">4,650,000</span>
+              <span class="cart-summary__currency">تومان</span>
+            </p>
+          </div>
+        </section>
+        <div class="payment">
+          <span class="payment__icon">
+            <img src="/assets/images/PaymentGateway.png" alt="" />
+          </span>
+          <p class="payment__text">
+            پرداخت امن با کارت‌های عضو شتاب از طریق <strong>درگاه زیبال</strong>
+          </p>
+        </div>
+        <button class="cart__submit" type="submit" form="checkout">
+          پرداخت و خرید محصول
+        </button>
+      </aside>
+    </main>
+  </body>
+</html>
